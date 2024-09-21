@@ -4,7 +4,7 @@ podrá colocar sus artículos, haciendo su lista, posteriormente
 se podrá agregar la función de listas para que se vayan guardando
 los artículos y el usuario pueda ver de nuevo su lista creada,
 podrá modificarla y ver las listas que había hecho anteriormente"""
-def prueba ():
+def lista_antes ():
     contador=0
     entrada_salida=str(input("Ingresa N si deseas cerrar la lista, ingresa S si deseas continuar de la lista: "))
     while entrada_salida=="S":
@@ -72,7 +72,7 @@ def main():
         usuario=int(input("Favor de ingresar el número de acuerdo a la acción a realizar: "))
         if usuario==1:
             print("Bienvenido a la creación de tú lista de super")
-            prueba()
+            lista_antes()
         if usuario==2:
             print("En proceso de creación con listas, muchas de las funciones, aún le falta arreglos")
         if usuario==3:
@@ -92,4 +92,10 @@ def main():
         if usuario==5:
             print("Gracias por utilizar ¡Casi se me olvida!")
             break        
-main()      
+main()
+"""def pruebas():
+    resultado=conversion_k(5)
+    print(resultado)
+    resultado=conversion_l(5)
+    print(resultado)
+pruebas()"""
