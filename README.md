@@ -18,7 +18,7 @@ Proceso:
 7. imprimir la opción de regresar al menú principal
 Salida:
 1. Regresar al menú principal.
-Algoritmo función main:
+1. Algoritmo función main:
 Entrada:
 1. La opción que ingrese el usuario.
 Proceso:
