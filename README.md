@@ -5,6 +5,51 @@ Una de las cosas que pasan muchas veces cuando vamos a un supermercado es que se
 # Algoritmo
 """
 Aún falta el algoritmo por función
+Algoritmo función prueba
+Entrada
+1. Artículos a comprar o lista de compras
+Proceso:
+1. contador es igual a 0
+2. entrada_salida es igual a S
+3. Mientras entrada es igual a S
+4. lista_compras es igual a el input de la lista.
+5. entrada_salida es iguala a la opción de salir colocando N
+6. contador es más igual a 1
+7. imprimir la opción de regresar al menú principal
+Salida:
+1. Regresar al menú principal.
+Algoritmo función main:
+Entrada:
+1. La opción que ingrese el usuario.
+Proceso:
+1. Mientras True
+2. Imprimir la función menú.
+3. usuario es igual a lo que ingrese el usuario de las opciones del menú
+4. si usuario es igual a uno:
+5. imprimir bienvenido a la función crear listas
+6. correr la función prueba.
+7. si usuario es igual a dos:
+5. imprimir en proceso de creación
+6. si usuario es igual a tres:
+5. imprimir bienvenido a tu lista de super en tiempo real
+6. correr la función precio_productos.
+7. si usuario es igual a cuatro:
+5. imprimir bienvenido a la sección de convrsión de unidades
+6. usuario_1 es igual a lo que ingrese el usuario kl o lk.
+7. si usuario_1 es igual a kl
+8. o=el valor numérico que ingrese el usuario
+9. llamar la función conversión_k
+10. imprimir resultado
+11.  si usuario_1 es igual a lk
+8. p=el valor numérico que ingrese el usuario
+9. llamar la función conversión_l
+10. imprimir resultado
+12. si usuario es igual a 5
+13. imprimir gracias por utilizar la aplicación casi se me olvida, vuelva pronto
+14. break
+15. Salida:
+16. Mensaje dependiendo la función
+       
 Entrada:
 1.Artículo.
 2.Cantidad del artículo.
