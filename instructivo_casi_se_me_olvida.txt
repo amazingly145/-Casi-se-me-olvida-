@@ -1,0 +1,9 @@
+Instructivo ¡Casi se me olvida!
+1. Bienvenido a ¡casi se me olvida! Para poder utilizar la aplicación favor de leer las siguientes instrucciones:
+2. Para poder ver como se utiliza 
+3. Al ingresar a la aplicación podrá visualizar la sección del menú, del cual podrá hacer la acción que desea realizar.
+4. Si desea crear una lista de compras, antes de dirigirse hacia su supermermercado favorito: favor de ingresar el comando "1".
+5. Si desea visualizar la lista creada en el comando 1, favor de ingresar el comando 2, el cual le desplegará su lista completa.
+6. Si se encuentra a su supermercado y desea tener una contabilidad de lo que está comprando, así como su precio, y el monto máximo a gastar, favor de ingresar el comando 3.
+7. Si se encuentra a su supermercado y desea convertir sus unidades de libras a kilogramos o viseversa, favr de ingresar el comando 4.
+8. Finalmente si desea salir de la aplicación, favor de ingresar el comando 6.
