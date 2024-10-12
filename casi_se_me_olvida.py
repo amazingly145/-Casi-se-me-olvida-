@@ -8,6 +8,15 @@ def pruebas():
     print(resultado)
     resultado=conversion_l(5)
     print(resultado)
+    instructivo()
+    cadena="hola"
+    imprimir_cadena(cadena)
+"""La función imprimir cadena
+Ayuda a imprimir una serie de letras o palabras
+de cierta manera."""
+def imprimir_cadena(cadena):
+    for i in range (0,len(cadena)):
+        print(cadena[i], end='')
 """La función lista antes:
 es la función para crear la lista del súper, donde el usuario
 podrá colocar sus artículos, haciendo su lista, posteriormente
@@ -23,6 +32,13 @@ def lista_antes (lista_compras):
         entrada_salida=str(input("Ingresa N si deseas cerrar la lista, ingresa S si deseas continuar de la lista: "))
         contador+=1
     return(lista_compras)
+"""La función instructivo:
+Muestra las instrucciones de la aplicación, 
+para que el usuario pueda utilizarla."""
+def instructivo():
+    file=open("instructivo_casi_se_me_olvida.txt", "r")
+    contenido=file.read()
+    print(contenido)
 """La función precio_productos:
 es la función donde el usuario, ponga un valor máximo a gastar.
 Cuando se encuentre en la tienda, podrá poner el artículo, el costo y
@@ -39,7 +55,7 @@ def precios_productos(matriz,monto_max,numero_productos_total):
         nombre_producto=input("Ingresa el nombre del artículo: ")
         numero_producto=int(input("¿Cuántos "+nombre_producto+ " vas a comprar? "))
         producto.append(numero_producto)
-        producto.append(nombre_producto)
+        producto.append(nombre_producto.lower())
         precio_producto=int(input("Ingresa el precio del artículo: "))
         producto.append(precio_producto)
         matriz.append(producto)
@@ -47,7 +63,8 @@ def precios_productos(matriz,monto_max,numero_productos_total):
         contador+=numero_producto
     print("---------------------Resumen de compras---------------------")
     print("número de artículos    "+"nombre productos   "+"precio de artículo   ")
-    print("------------------------------------------------------------")
+    cadena="------------------------------------------------------------"
+    imprimir_cadena(cadena)
     for b in range(len(matriz)):
         for c in range(len(matriz[b])):
             print("      ",matriz[b][c],"           ", end='')
@@ -69,7 +86,7 @@ def conversion_k(n):
     return kilogramo
 """La función conversión_l:
 está función muestra la conversión de unidades
-de libra a kilogramo"""   
+de libra a kilogramo"""
 def conversion_l(n):
     libra=n*0.453592
     return libra
@@ -77,17 +94,21 @@ def conversion_l(n):
 muestra las opciones que tiene el usuario
 de escoger entre las opciones para la aplicación.""" 
 def menu():
-    print("Bienvenid@ a la aplicación ¡Casi se me olvida!")
-    print("1. Crear mi lista")
-    print("2. Visualzar lista")
-    print("3. Ingresar productos y precios")
-    print("4. Conversión de unidades de kilogramos a libras")
-    print("5. Prueba")
-    print("6. Salir")
+    print("Menú de usuario")
+    print("1. Instructivo")
+    print("2. Crear/agregar elementos a mi lista")
+    print("3. Visualzar lista")
+    print("4. Ingresar productos y precios")
+    print("5. Conversión de unidades de peso")
+    print("5. Conversión de unidades de líquido")
+    print("6. Prueba")
+    print("7. Salir")
 """La función main:
 Dependiendo de la selección del usuario,
 podrá hacerse las diferentes funciones ya establecidas.""" 
 def main():
+    nombre=str(input("¿Cuál es tu nombre?\n"))
+    print("Bienvenid@ " +nombre+ " a la aplicación ¡Casi se me olvida!")
     lista_compras=[]
     matriz_principal=[]
     matriz=[]
@@ -95,18 +116,24 @@ def main():
         menu()
         usuario=int(input("Favor de ingresar el número de acuerdo a la acción a realizar: "))
         if usuario==1:
-            print("Bienvenido a la creación de tú lista de super")
-            matriz_principal.append(lista_antes(lista_compras))
+            instructivo()
         if usuario==2:
-            print("----Lista de compras----")
-            print(matriz_principal)
+            cadena="Bienvenido a la creación de tú lista de super \n"
+            imprimir_cadena(cadena)
+            lista_antes(lista_compras)
         if usuario==3:
-            print("Bienvenido a tú lista de super en tiempo real")
+            cadena="Tú lista de compras es la siguiente:\n"
+            imprimir_cadena(cadena)
+            print(lista_compras)
+        if usuario==4:
+            cadena="Bienvenido a tú lista de super en tiempo real"
+            imprimir_cadena(cadena)
             monto_max=int(input("Ingresa el $monto$, máximo a gastar: "))
             numero_productos_total=int(input("Ingresa el número de artículos a comprar: "))
             precios_productos(matriz,monto_max,numero_productos_total)
-        if usuario==4:
-            print("Bienvenido a la sección de conversión de unidades")
+        if usuario==5:
+            cadena="Bienvenido a la sección de conversión de unidades"
+            imprimir_cadena(cadena)
             usuario_1=str(input("Si deseas convertir de kilogramos a libras ingresa kl, si es lo contrario ingresa lk: "))
             if usuario_1=="kl":
                 o=int(input("Ingresa la unidad en kilogramos que deseas cambiar a libras: "))
@@ -116,9 +143,9 @@ def main():
                 p=int(input("Ingresa la unidad en libras que deseas cambiar a kilogramos: "))
                 kilogramos=conversion_l(p)
                 print(str(p)+"lb es igual a: "+str(kilogramos)+"kg")
-        if usuario==5:
-            pruebas()  
         if usuario==6:
+            pruebas()
+        if usuario==7:
             print("Gracias por utilizar ¡Casi se me olvida!")
             break      
 main()
