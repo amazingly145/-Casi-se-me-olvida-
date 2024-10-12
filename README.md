@@ -4,6 +4,7 @@
 Una de las cosas que pasan muchas veces cuando vamos a un supermercado es que se nos olvidan los productos que queremos comprar e incluso gastamos más de lo que teníamos esperados, por lo que está aplicación podrá ayudarte a organizarte mejor. Tener una lista de compras te ayuda a tener una mejor organización en tu vida y te evita caer en ofertas que no necesites y de esta manera solo obtener lo que realmente necesitas en tu vida. Tener una lista de compra te ayuda a comprar cosas que probablemente ya tienes en casa o cosas que no necesitas y de esta manera podrás tener todas tus cosas sin necesitar de dar doble vuelta. Otro de los beneficios es que podrás organizar calmadamente tu comida semanal y de esta manera evitar el estrés de que tengas que recordar lo que tengas que comprar. Teniendo en cuenta las cosas o comida a comprar, se evita desperdiciar comida y tenerla planificada para la semana, de esta manera tendrás toda tu casa en orden.<br>
 # Instrucciones de uso 
 1. Instalar la aplicación de python o algún procesador de código.<br>
+2.Descargar el archivo en python así como el formato txt.<br>
 2. Correr el código.<br>
 3. De acuerdo a la acción que se desea relizar ingresar el número que se quiera hacer del menú.<br>
 4. Seguir las insrtrucciones de lo que se pide para correr la aplicación.<br>
