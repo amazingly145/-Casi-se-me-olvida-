@@ -3,6 +3,20 @@ Podremos visualizar las funciones que se
 puedan colocar números, de esta manera
 podemos visualizar algunos ejemplos
 de lo que saldría de la función"""
+"""Caso de prueba
+Entrada=
+Salida=
+11.0231
+2.26796
+1. Bienvenido a ¡casi se me olvida! Para poder utilizar la aplicación favor de leer las siguientes instrucciones:
+2. Para poder ver como se utiliza 
+3. Al ingresar a la aplicación podrá visualizar la sección del menú, del cual podrá hacer la acción que desea realizar.
+4. Si desea crear una lista de compras, antes de dirigirse hacia su supermermercado favorito: favor de ingresar el comando "1".
+5. Si desea visualizar la lista creada en el comando 1, favor de ingresar el comando 2, el cual le desplegará su lista completa.
+6. Si se encuentra a su supermercado y desea tener una contabilidad de lo que está comprando, así como su precio, y el monto máximo a gastar, favor de ingresar el comando 3.
+7. Si se encuentra a su supermercado y desea convertir sus unidades de libras a kilogramos o viseversa, favr de ingresar el comando 4.
+8. Finalmente si desea salir de la aplicación, favor de ingresar el comando 6.
+hola"""
 def pruebas():
     resultado=conversion_k(5)
     print(resultado)
@@ -11,18 +25,23 @@ def pruebas():
     instructivo()
     cadena="hola"
     imprimir_cadena(cadena)
-"""La función imprimir cadena
-Ayuda a imprimir una serie de letras o palabras
-de cierta manera."""
+"""La función imprimir_cadena:
+Imprime alguna palabra a partir del número de caractéres de la misma"""
+"""Caso de prueba función imprimir_cadena
+Entrada=Bienvenido a la creación de tú lista de super \n
+Salida=Bienvenido a la creación de tú lista de super"""
 def imprimir_cadena(cadena):
     for i in range (0,len(cadena)):
         print(cadena[i], end='')
+"""Caso de prueba función imprimir_cadena
+Entrada=casa,ropa, vaso
+Salida=[casa,ropa,vaso]"""
 """La función lista antes:
 es la función para crear la lista del súper, donde el usuario
 podrá colocar sus artículos, haciendo su lista, posteriormente
 se podrá agregar la función de listas para que se vayan guardando
 los artículos y el usuario pueda ver de nuevo su lista creada,
-podrá modificarla y ver las listas que había hecho anteriormente"""
+podrá agregarle elementos y visualizar la lista."""
 def lista_antes (lista_compras):
     contador=0
     entrada_salida="S"
@@ -35,6 +54,17 @@ def lista_antes (lista_compras):
 """La función instructivo:
 Muestra las instrucciones de la aplicación, 
 para que el usuario pueda utilizarla."""
+"""Caso de prueba función instructivo
+Entrada=archivo con las instrucciones
+Salida=Instructivo ¡Casi se me olvida!
+1. Bienvenido a ¡casi se me olvida! Para poder utilizar la aplicación favor de leer las siguientes instrucciones:
+2. Para poder ver como se utiliza 
+3. Al ingresar a la aplicación podrá visualizar la sección del menú, del cual podrá hacer la acción que desea realizar.
+4. Si desea crear una lista de compras, antes de dirigirse hacia su supermermercado favorito: favor de ingresar el comando "1".
+5. Si desea visualizar la lista creada en el comando 1, favor de ingresar el comando 2, el cual le desplegará su lista completa.
+6. Si se encuentra a su supermercado y desea tener una contabilidad de lo que está comprando, así como su precio, y el monto máximo a gastar, favor de ingresar el comando 3.
+7. Si se encuentra a su supermercado y desea convertir sus unidades de libras a kilogramos o viseversa, favr de ingresar el comando 4.
+8. Finalmente si desea salir de la aplicación, favor de ingresar el comando 6."""
 def instructivo():
     file=open("instructivo_casi_se_me_olvida.txt", "r")
     contenido=file.read()
@@ -46,6 +76,9 @@ el número a llevar del mismo, al final podrá ver cuánto
 se gastó y el número de asrtículos que lleva. También se guardará en otra lista,
 se podrá ver los artículos, junto con su precio y el total a gastar
 del usuario."""
+"""Caso de prueba función precio productos
+Entrada=monto máximo a gastar, matriz, numero de productos total
+Salida=Resumen de compras, con los montos gastados y comparación"""
 def precios_productos(matriz,monto_max,numero_productos_total):
     resultado=0
     contador=0
@@ -80,19 +113,35 @@ def precios_productos(matriz,monto_max,numero_productos_total):
     print("Llevas un total de: "+str(contador)+" artículos")
 """La función conversión_k:
 está función muestra la conversión de unidades
-de kilogramo a libra"""    
+de kilogramo a libra"""
+"""Caso de prueba conversión k(n)
+Entrada=kl, 3
+Salida=6.613lb"""
 def conversion_k(n):
     kilogramo=n*2.20462
     return kilogramo
 """La función conversión_l:
 está función muestra la conversión de unidades
 de libra a kilogramo"""
+"""Caso de prueba conversión k(n)
+Entrada=lk, 3
+Salida=1.36077kg"""
 def conversion_l(n):
     libra=n*0.453592
     return libra
 """La función menú:
 muestra las opciones que tiene el usuario
-de escoger entre las opciones para la aplicación.""" 
+de escoger entre las opciones para la aplicación."""
+"""Caso de prueba menu()
+Entrada=
+Salida=Menú de usuario
+1. Instructivo
+2. Crear/agregar elementos a mi lista
+3. Visualzar lista
+4. Ingresar productos y precios
+5. Conversión de unidades de peso
+6. Prueba
+7. Salir"""
 def menu():
     print("Menú de usuario")
     print("1. Instructivo")
@@ -100,12 +149,15 @@ def menu():
     print("3. Visualzar lista")
     print("4. Ingresar productos y precios")
     print("5. Conversión de unidades de peso")
-    print("5. Conversión de unidades de líquido")
     print("6. Prueba")
     print("7. Salir")
 """La función main:
 Dependiendo de la selección del usuario,
-podrá hacerse las diferentes funciones ya establecidas.""" 
+podrá hacerse las diferentes funciones ya establecidas."""
+"""Caso de prueba main()
+Entrada=
+Salida=
+Mensaje"""
 def main():
     nombre=str(input("¿Cuál es tu nombre?\n"))
     print("Bienvenid@ " +nombre+ " a la aplicación ¡Casi se me olvida!")
