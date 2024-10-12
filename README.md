@@ -12,18 +12,18 @@ Entrada.<br>
 Proceso.<br>
 1.Preguntarle al usuario cual es su nombre.<br>
 2.Imprimir la bienvenida, con el nombre del usuario ingresado.<br>
-3.Mientras sea verdadero
+3.Mientras sea verdadero.<br>
 4.Desplegar el menú con las opciones para que el ususario escoga la lista de compras que desee crear.<br>
 5.Si el usuario escoge la opción 1, abrir la función instructivo, donde se desplega todas las instrucciones.<br>
 6.Si usuario escoge la opción 2, imprimir la bienvenida a la función y abrir la función lista_antes para crear la lista de compras.<br>
-7.Si usuario escoge la opción 3, imprimir la lista creada en la función anterior.
-8.Si usuario escoge la opción 4, imprimir la bienvenida, preguntar al usuario el monto máximo a gastar y número de productos a comprar, llamar la función precio_productos con los parámetros pedidos.
-9.Si usuario escoge la opción 5, dar la bienvenida al usuario, preguntarle al usuario cual opción quiere hacer de libras a kilogramos o de kilogramos a libras, llamar la función de libras o kilogramos dependiendo de la función escogida.
-10.Si usuario es igual a 6, abrir la función pruebas.
-11. Si usuario es igual a 7, terminar con el programa.
+7.Si usuario escoge la opción 3, imprimir la lista creada en la función anterior.<br>
+8.Si usuario escoge la opción 4, imprimir la bienvenida, preguntar al usuario el monto máximo a gastar y número de productos a comprar, llamar la función precio_productos con los parámetros pedidos.<br>
+9.Si usuario escoge la opción 5, dar la bienvenida al usuario, preguntarle al usuario cual opción quiere hacer de libras a kilogramos o de kilogramos a libras, llamar la función de libras o kilogramos dependiendo de la función escogida.<br>
+10.Si usuario es igual a 6, abrir la función pruebas.<br>
+11. Si usuario es igual a 7, terminar con el programa.<br>
 Salida:
-1.Lista de compras
-2.Nueva medida de conversión de unidades
+1.Lista de compras.<br>
+2.Nueva medida de conversión de unidades.<br>
 Entrada:
 1. La opción que ingrese el usuario.
 Proceso:
