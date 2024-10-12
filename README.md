@@ -5,18 +5,25 @@ Una de las cosas que pasan muchas veces cuando vamos a un supermercado es que se
 # Algoritmo
 Algoritmo general.<br>
 Entrada.<br>
-1. Artículos a comprar o lista de compras.<br>
-Proceso:.<br>
-1. contador es igual a 0
-2. entrada_salida es igual a S
-3. Mientras entrada es igual a S
-4. lista_compras es igual a el input de la lista.
-5. entrada_salida es iguala a la opción de salir colocando N
-6. contador es más igual a 1
-7. imprimir la opción de regresar al menú principal
+1.Artículos a comprar.<br>
+2.Monto total a gastar.<br>
+3.Artículos comprados durante la tienda.<br>
+4.Unidades de medida en kilogramos o libras.<br>
+Proceso.<br>
+1.Preguntarle al usuario cual es su nombre.<br>
+2.Imprimir la bienvenida, con el nombre del usuario ingresado.<br>
+3.Mientras sea verdadero
+4.Desplegar el menú con las opciones para que el ususario escoga la lista de compras que desee crear.<br>
+5.Si el usuario escoge la opción 1, abrir la función instructivo, donde se desplega todas las instrucciones.<br>
+6.Si usuario escoge la opción 2, imprimir la bienvenida a la función y abrir la función lista_antes para crear la lista de compras.<br>
+7.Si usuario escoge la opción 3, imprimir la lista creada en la función anterior.
+8.Si usuario escoge la opción 4, imprimir la bienvenida, preguntar al usuario el monto máximo a gastar y número de productos a comprar, llamar la función precio_productos con los parámetros pedidos.
+9.Si usuario escoge la opción 5, dar la bienvenida al usuario, preguntarle al usuario cual opción quiere hacer de libras a kilogramos o de kilogramos a libras, llamar la función de libras o kilogramos dependiendo de la función escogida.
+10.Si usuario es igual a 6, abrir la función pruebas.
+11. Si usuario es igual a 7, terminar con el programa.
 Salida:
-1. Regresar al menú principal.
-1. Algoritmo función main:
+1.Lista de compras
+2.Nueva medida de conversión de unidades
 Entrada:
 1. La opción que ingrese el usuario.
 Proceso:
@@ -63,4 +70,4 @@ Salida:
 1.Lista de compras.
 2.Monto gastado
 3.Monto previsto.
-"""
+
