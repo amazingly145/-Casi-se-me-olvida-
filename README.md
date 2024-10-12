@@ -21,7 +21,7 @@ Proceso.<br>
 9.Si usuario escoge la opción 5, dar la bienvenida al usuario, preguntarle al usuario cual opción quiere hacer de libras a kilogramos o de kilogramos a libras, llamar la función de libras o kilogramos dependiendo de la función escogida.<br>
 10.Si usuario es igual a 6, abrir la función pruebas.<br>
 11. Si usuario es igual a 7, terminar con el programa.<br>
-Salida:
+Salida:.<br>
 1.Lista de compras.<br>
 2.Nueva medida de conversión de unidades.<br>
 Entrada:
