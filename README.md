@@ -4,12 +4,12 @@
 Una de las cosas que pasan muchas veces cuando vamos a un supermercado es que se nos olvidan los productos que queremos comprar e incluso gastamos más de lo que teníamos esperados, por lo que está aplicación podrá ayudarte a organizarte mejor. Tener una lista de compras te ayuda a tener una mejor organización en tu vida y te evita caer en ofertas que no necesites y de esta manera solo obtener lo que necesitas. Tener una lista de compra te ayuda a comprar cosas que probablemente ya tienes en casa o cosas que no necesitas y de esta manera podrás tener todas tus cosas sin necesitar de dar doble vuelta. Otro de los benneficios es que podrás organizar calamadamente tu comida semanal y de esta manera evitar el estrés de que tengas que recordar lo que tengas que comprar.
 # Algoritmo
 ### Algoritmo general.<br>
-Entrada.<br>
+### Entrada.<br>
 1.Artículos a comprar.<br>
 2.Monto total a gastar.<br>
 3.Artículos comprados durante la tienda.<br>
 4.Unidades de medida en kilogramos o libras.<br>
-Proceso.<br>
+### Proceso.<br>
 1.Preguntarle al usuario cual es su nombre.<br>
 2.Imprimir la bienvenida, con el nombre del usuario ingresado.<br>
 3.Mientras sea verdadero.<br>
@@ -21,7 +21,7 @@ Proceso.<br>
 9.Si usuario escoge la opción 5, dar la bienvenida al usuario, preguntarle al usuario cual opción quiere hacer de libras a kilogramos o de kilogramos a libras, llamar la función de libras o kilogramos dependiendo de la función escogida.<br>
 10.Si usuario es igual a 6, abrir la función pruebas.<br>
 11. Si usuario es igual a 7, terminar con el programa.<br>
-Salida:.<br>
+### Salida:.<br>
 1.Lista de compras.<br>
 2.Nueva medida de conversión de unidades.<br>
 Entrada:
