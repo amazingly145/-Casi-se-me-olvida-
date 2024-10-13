@@ -42,11 +42,12 @@ podrá colocar sus artículos, haciendo su lista, posteriormente
 se podrá agregar la función de listas para que se vayan guardando
 los artículos y el usuario pueda ver de nuevo su lista creada,
 podrá agregarle elementos y visualizar la lista."""
-def lista_antes (lista_compras):
+def lista_antes ():
     contador=0
+    lista_compras=[]
     entrada_salida="S"
     while entrada_salida=="S":
-        articulo=str(input("Ingresa el nombre del artículo: "))
+        articulo=str(input("Ingresa el nombre del artículo: ")).lower()
         lista_compras.append((articulo))
         entrada_salida=str(input("Ingresa N si deseas cerrar la lista, ingresa S si deseas continuar de la lista: "))
         contador+=1
@@ -66,7 +67,7 @@ Salida=Instructivo ¡Casi se me olvida!
 7. Si se encuentra a su supermercado y desea convertir sus unidades de libras a kilogramos o viseversa, favr de ingresar el comando 4.
 8. Finalmente si desea salir de la aplicación, favor de ingresar el comando 6."""
 def instructivo():
-    file=open("instructivo_casi_se_me_olvida.txt", "r")
+    file=open("ProyectoFinal_A01753419.txt", "r")
     contenido=file.read()
     print(contenido)
 """La función precio_productos:
@@ -96,7 +97,7 @@ def precios_productos(matriz,monto_max,numero_productos_total):
         contador+=numero_producto
     print("---------------------Resumen de compras---------------------")
     print("número de artículos    "+"nombre productos   "+"precio de artículo   ")
-    cadena="------------------------------------------------------------"
+    cadena="------------------------------------------------------------\n"
     imprimir_cadena(cadena)
     for b in range(len(matriz)):
         for c in range(len(matriz[b])):
@@ -129,6 +130,16 @@ Salida=1.36077kg"""
 def conversion_l(n):
     libra=n*0.453592
     return libra
+"""La función imprimeMatriz(matriz):
+está función imprime la matriz de la lista de compras"""
+"""Caso de prueba imprimeMatriz(matriz)
+Entrada=matriz_principal: planta, vaso
+Salida=planta vaso"""
+def imprimeMatriz(matriz):
+    for c in range(0,len(matriz)):
+        for d in range(0,len(matriz[c])):
+            print(matriz[c][d],end=' ')
+        print()
 """La función menú:
 muestra las opciones que tiene el usuario
 de escoger entre las opciones para la aplicación."""
@@ -161,7 +172,6 @@ Mensaje"""
 def main():
     nombre=str(input("¿Cuál es tu nombre?\n"))
     print("Bienvenid@ " +nombre+ " a la aplicación ¡Casi se me olvida!")
-    lista_compras=[]
     matriz_principal=[]
     matriz=[]
     while True:
@@ -172,19 +182,21 @@ def main():
         if usuario==2:
             cadena="Bienvenido a la creación de tú lista de super \n"
             imprimir_cadena(cadena)
-            lista_antes(lista_compras)
+            lista_compras=lista_antes()
+            matriz_principal.append(lista_compras)
         if usuario==3:
             cadena="Tú lista de compras es la siguiente:\n"
             imprimir_cadena(cadena)
-            print(lista_compras)
+            imprimeMatriz(matriz_principal)
+            #print(lista_compras)
         if usuario==4:
-            cadena="Bienvenido a tú lista de super en tiempo real"
+            cadena="Bienvenido a tú lista de super en tiempo real\n"
             imprimir_cadena(cadena)
             monto_max=int(input("Ingresa el $monto$, máximo a gastar: "))
             numero_productos_total=int(input("Ingresa el número de artículos a comprar: "))
             precios_productos(matriz,monto_max,numero_productos_total)
         if usuario==5:
-            cadena="Bienvenido a la sección de conversión de unidades"
+            cadena="Bienvenido a la sección de conversión de unidades\n"
             imprimir_cadena(cadena)
             usuario_1=str(input("Si deseas convertir de kilogramos a libras ingresa kl, si es lo contrario ingresa lk: "))
             if usuario_1=="kl":
@@ -198,6 +210,6 @@ def main():
         if usuario==6:
             pruebas()
         if usuario==7:
-            print("Gracias por utilizar ¡Casi se me olvida!")
+            print("Gracias "+nombre+ " por utilizar ¡Casi se me olvida!")
             break      
 main()
