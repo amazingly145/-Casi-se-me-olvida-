@@ -67,7 +67,7 @@ Salida=Instructivo ¡Casi se me olvida!
 7. Si se encuentra a su supermercado y desea convertir sus unidades de libras a kilogramos o viseversa, favr de ingresar el comando 4.
 8. Finalmente si desea salir de la aplicación, favor de ingresar el comando 6."""
 def instructivo():
-    file=open("ProyectoFinal_A01753419.txt", "r")
+    file=open("instructivo_casi_se_me_olvida.txt", "r")
     contenido=file.read()
     print(contenido)
 """La función precio_productos:
